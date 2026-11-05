@@ -498,29 +498,19 @@ img {
   }
 }
 
-/* ---------- Modelos (abas por setor + card com as medidas embaixo) ---------- */
+/* ---------- Modelos (todos os setores de uma vez, medidas embaixo de cada card) ---------- */
 
-.md-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-}
-.md-tab {
-  border: 2px solid var(--sp-ink);
+/* Título do setor: faixa marrom com o mesmo carimbo preto dos grifos. */
+.md-sector {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.4em 1.1em;
   border-radius: 9999px;
-  background: var(--sp-white);
-  color: var(--sp-ink);
-  padding: 0.45em 1em;
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 900;
-  cursor: pointer;
-  transition: background-color 150ms ease, color 150ms ease;
-}
-.md-tab[aria-selected="true"] {
   background: var(--sp-500);
   color: var(--sp-white);
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 900;
   box-shadow: 3px 3px 0 var(--sp-ink);
 }
 .md-card {

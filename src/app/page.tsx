@@ -5,11 +5,10 @@ import { Check, ChevronsDown, Minus, Plus, Printer, Scissors, ShieldCheck, Shape
 
 const IMG = "/assets";
 // Preço e checkout desta página (cada página tem os seus). OLD_PRICE null = sem preço riscado.
-// TODO(Luan): checkout ainda não enviado.
 const CURRENCY = "US$";
-const PRICE = "22";
+const PRICE = "10";
 const OLD_PRICE: string | null = null;
-const CHECKOUT = "#offer";
+const CHECKOUT = "https://pay.hotmart.com/R108359573H?checkoutMode=10";
 const display = "font-display";
 
 /** "97,00" e "37,00" → 62 */
@@ -466,7 +465,7 @@ export default function CiudadPage() {
                 Una ciudad en 4 sectores: <Mark on="light">35 modelos</Mark>, 378 piezas, 205 páginas
               </SectionTitle>
               <p className="mt-4 text-center text-lg font-bold text-sp-ink-soft">
-                Elige un sector y mira el tamaño, las piezas y las páginas de cada modelo.
+                Mira el tamaño, las piezas y las páginas de cada modelo.
               </p>
               <div className="mt-8">
                 <ModelExplorer sectors={SECTORS} imgBase={`${IMG}/modelos`} />
